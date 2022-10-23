@@ -98,6 +98,21 @@ Rails/ActionFilter:
     - app/controllers/**/*.rb
     - app/mailers/**/*.rb
 
+Rails/ActionName:
+  Description: Use only specific action names.
+  Enabled: pending
+  VersionAdded: '<<next>>'
+  ActionNames:
+    - index
+    - show
+    - new
+    - edit
+    - create
+    - update
+    - destroy
+  Include:
+    - app/controllers/**/*.rb
+
 Rails/ActionOrder:
   Description: 'Enforce consistent ordering of controller actions.'
   Enabled: pending
