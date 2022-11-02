@@ -17,7 +17,7 @@ module RuboCop
       #     def index
       #     end
       #   end
-      class ActionName < Base
+      class SpecificActionNames < Base
         include VisibilityHelp
 
         MSG = 'Use only specific action names.'

@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 
-RSpec.describe RuboCop::Cop::Rails::ActionName, :config do
+RSpec.describe RuboCop::Cop::Rails::SpecificActionNames, :config do
   context 'when non configured name is used for private method' do
     it 'does not register an offense' do
       expect_no_offenses(<<~RUBY)
