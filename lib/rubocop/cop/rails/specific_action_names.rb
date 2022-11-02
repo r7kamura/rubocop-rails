@@ -27,7 +27,13 @@ module RuboCop
         def on_def(node)
           return unless bad?(node)
 
-          add_offense(node.location.name)
+          add_offense(
+            node.location.name,
+            message: format(
+              'Use only specific action names (%<action_names>s).',
+              action_names: configured_action_names.join(', ')
+            )
+          )
         end
 
         private
