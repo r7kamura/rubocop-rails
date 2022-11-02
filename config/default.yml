@@ -969,7 +969,7 @@ Rails/SkipsModelValidations:
 
 Rails/SpecificActionNames:
   Description: Use only specific action names.
-  Enabled: pending
+  Enabled: false
   VersionAdded: '<<next>>'
   ActionNames:
     - index
